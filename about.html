@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: cursive;
+            margin: 0;
+            padding: 0;
+        }
+
+        .about-container {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .about-content {
+            line-height: 1.6;
+        }
+
+        .skills, .projects, .interests, .education {
+            margin-top: 20px;
+        }
+
+        .skills ul, .projects ul, .interests ul, .education ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skills li, .projects li, .interests li, .education li {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .skills li:last-child, .projects li:last-child, .interests li:last-child, .education li:last-child {
+            border-bottom: none;
+        }
+
+        .project-link {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .project-link:hover {
+            color: #ccc;
+        }
+
+        #go-back-button {
+            background-color: #ccc;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        #go-back-button:hover {
+            background-color: #aaa;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            clear: both;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="about-container">
+        <div class="about-header">
+            <h1>About Me</h1>
+        </div>
+        <div class="about-content">
+            <p>Hello, my name is Adeniyi David. I'm a web programmer and I'm passionate about technology and web development.</p>
+            <hr>
+            <div class="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>Studied at Wisdom Gate International, where I earned a Certificate in Web Development</li>
+                </ul>
+                <hr>
+            </div>
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Debugging</li>
+                    <li>Node.js</li>
+                    <li>VS Code</li>
+                    <li>Web Development</li>
+                    <li>Responsive Web Design</li>
+                    <li>Front-end Development</li>
+                    <li>Back-end Development</li>
+                    <li>API Integration</li>
+                    <li>Version Control (Git)</li>
+                </ul>
+                <hr>
+            </div>
+            <div class="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li><a class="project-link" href="#">Project 1: Personal Website</a></li>
+                    <li><a class="project-link" href="#">Project 2: Todo List App</a></li>
+                    <li><a class="project-link" href="#">Project 3: Weather App</a></li>
+                </ul>
+                <hr>
+            </div>
+            <div class="interests">
+                <h2>Interests</h2>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Mobile App Development</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Gaming</li>
+                    <li>Cyber Security</li>
+                </ul>
+                <hr>
+            </div>
+            <button id="go-back-button" onclick="goBack()">Go Back</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Adeniyi David. All Rights Reserved.</p>
+        <p>
+            <a href="#">Contact Me</a> |
+            <a href="#">Terms of Service</a> |
+            <a href="#">Privacy Policy</a>
+        </p>
+    </footer>
+
+    <script>
+        function goBack() {
+            if (document.referrer) {
+                window.location.href = document.referrer;
+            } else {
+                alert("No previous page found.");
+            }
+        }
+    </script>
+</body>
+</html>
